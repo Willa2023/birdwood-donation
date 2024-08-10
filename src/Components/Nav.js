@@ -4,7 +4,7 @@ import { Button } from "@mui/material";
 
 const Nav = () => {
   return (
-    <>
+    <nav className="nav container">
       <Button component={NavLink} to="/">
         Home
       </Button>
@@ -17,7 +17,7 @@ const Nav = () => {
       <Button component={NavLink} to="/contact">
         Contact
       </Button>
-    </>
+    </nav>
   )
 }
 
