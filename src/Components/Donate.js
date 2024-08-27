@@ -1,6 +1,7 @@
 import React from "react";
 
-const Donation = () => {
+const Donate = () => {
+  
   return (
     <div>
       This is the Donation page
@@ -8,4 +9,4 @@ const Donation = () => {
   );
 }
 
-export default Donation;
+export default Donate;

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-const Contact = () => {
+const DonateForm = () => {
     const formInitialDetails = {
         firstName: '',
         lastName: '',
@@ -88,4 +88,4 @@ const Contact = () => {
     );
 }
 
-export default Contact;
+export default DonateForm;
