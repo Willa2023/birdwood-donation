@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
+import logo from '../assets/img/KAKA.png';
+import { HashLink } from 'react-router-hash-link';
+import {
+  BrowserRouter as Router
+} from "react-router-dom";
 
 const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -23,11 +28,12 @@ const NavBar = () => {
     }
 
     return (
-        <>
+        <Router>
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="#home">
-            <h2>Birdwood Reserve Environmental</h2>
+          {/* <img src={logo} alt="Logo" /> */}
+          <h2>Birdwood Reserve Environmental Project</h2>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" >
             <span className="navbar-toggler-icon"></span>
@@ -42,7 +48,7 @@ const NavBar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      </>
+      </Router>
     );
 }
 
