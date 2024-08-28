@@ -1,6 +1,7 @@
 import './App.css';
 import NavBar from './Components/NavBar';
 import Banner from './Components/Banner';
+import About from './Components/About';
 import Donate from './Components/Donate';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
@@ -11,6 +12,7 @@ function App()  {
     <div className='app'>
       <NavBar />
       <Banner />
+      <About />
       <Donate />
       <Contact />
       <Footer />

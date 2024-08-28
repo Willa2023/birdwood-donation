@@ -1,26 +1,29 @@
-import { useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-
+import { useState } from "react";
+import { Container, Row, Col, Button, Form, InputGroup } from 'react-bootstrap';
+ 
 const DonateForm = () => {
     const formInitialDetails = {
-        firstName: '',
-        lastName: '',
+        name: '',
+        address: '',
+        postcode: '',
         email: '',
-        phone: '',
-        message: '',
+        donatedAmount: '',
+        donatedDate: '',
+        pledgedAmount: '',
+        pledgedDate: '',
     }
-
+    
     const [formDetails, setFormDetails] = useState(formInitialDetails);
     const [buttonText, setButtonText] = useState('Submit');
     const [status, setStatus] = useState({});
-
+    
     const onFormUpdate = (key, value) => {
         setFormDetails({
             ...formDetails,
             [key]: value,
         });
     }
-
+    
     const handleSubmit = async (e) => {
         e.preventDefault();
         setButtonText('Sending...');
@@ -45,47 +48,51 @@ const DonateForm = () => {
         }
         setFormDetails(formInitialDetails);
     }
-
+    
     return (
-        <section className="contact" id="contacts">
-            <Container>
-                <Row className="align-items-center">
-                    <Col md={6}>
-                    <img src={''} alt="Contact" />
-                    </Col>
-                    <Col md={6}>
-                        <h2>Contact us</h2>
-                        <form onSubmit={handleSubmit}>
-                            <Row>
-                                <Col sm={6} className='px-1'>
-                                    <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e)=> onFormUpdate('firstName', e.target.value)} />
-                                </Col>
-                                <Col sm={6} className='px-1'>
-                                    <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e)=> onFormUpdate('lastName', e.target.value)} />
-                                </Col>
-                                <Col sm={6} className='px-1'>
-                                    <input type="email" value={formDetails.email} placeholder="Email"  onChange={(e)=> onFormUpdate('email', e.target.value)} />
-                                </Col>
-                                <Col sm={6} className='px-1'>
-                                    <input type="tel" value={formDetails.phone} placeholder="Phone"  onChange={(e)=> onFormUpdate('phone', e.target.value)} />
-                                </Col>
-                                <Col sm={12} className='px-1'>
-                                    <textarea row="6" value={formDetails.message} placeholder="Message"  onChange={(e)=> onFormUpdate('message', e.target.value)} />
-                                    <button type="submit" ><span>{buttonText}</span></button>
-                                </Col>
-                                {
-                                    status.message &&
-                                    <Col>
-                                        <p className={status.success === false ? 'danger' : 'success'}>{status.message}</p>
-                                    </Col>
-                                }
-                            </Row>
-                        </form>
-                    </Col>
-                </Row>
-            </Container>
-        </section>
-    );
-}
+        <>
+            <Col md={6} className="donate-form">
+                <h2>Donation Form</h2>
+                <form onSubmit={handleSubmit}>
+                    <Row>
+                        <Col sm={12}  className='px-1'>
+                            <input type="text" value={formDetails.name} placeholder="Name" onChange={(e)=> onFormUpdate('name', e.target.value)} />
+                        </Col>
+                        <Col sm={12} className='px-1'>
+                            <textarea row="6" type="text" value={formDetails.address} placeholder="Address" onChange={(e)=> onFormUpdate('address', e.target.value)} />
+                        </Col>
+                        <Col sm={12} className='px-1'>
+                            <input type="text" value={formDetails.postcode} placeholder="Post Code" onChange={(e)=> onFormUpdate('address', e.target.value)} />
+                        </Col>
+                        <Col sm={12} className='px-1'>
+                            <input type="email" value={formDetails.email} placeholder="Email"  onChange={(e)=> onFormUpdate('email', e.target.value)} />
+                        </Col>
+                        <Col sm={6} className='px-1'>
+                          <input type="number" value={formDetails.donatedAmount} placeholder="Donated Amount"  onChange={(e)=> onFormUpdate('donatedAmount', e.target.value)} />
+                        </Col>
+                        <Col sm={6} className='px-1'>
+                            <input type="date" value={formDetails.donatedDate} placeholder="Donated Date"  onChange={(e)=> onFormUpdate('donatedDate', e.target.value)} />
+                        </Col>
+                        <Col sm={6} className='px-1'>
+                            <input type="number" value={formDetails.pledgedAmount} placeholder="Pledged Amount"  onChange={(e)=> onFormUpdate('pledgedAmount', e.target.value)} />
+                        </Col>
+                        <Col sm={6} className='px-1'>
+                            <input type="date" value={formDetails.pledgedDate} placeholder="Pledged Date"  onChange={(e)=> onFormUpdate('pledgedDate', e.target.value)} />
+                        </Col>
+                        <Col sm={12} className='px-1'>
+                            <Button variant="primary" type="submit" ><span>{buttonText}</span></Button>
+                        </Col>
+                        {
+                            status.message &&
+                            <Col>
+                                <p className={status.success === false ? 'danger' : 'success'}>{status.message}</p>
+                            </Col>
+                        }
+                    </Row>
+                </form>
+            </Col>
+        </>
+    )
+ }
 
-export default DonateForm;
+ export default DonateForm;

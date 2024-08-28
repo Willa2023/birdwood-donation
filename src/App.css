@@ -154,7 +154,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Banner CSS */
 .banner {
   margin-top: 0;
-  padding: 200px 0 200px 0;
+  padding: 200px 0 500px 0;
   background-image: url('./assets/img/banner-bg.jpg');
   background-position: top center;
   background-size:cover;
@@ -202,6 +202,38 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 
+/* About CSS */
+.about {
+  background-color: #b9d2e2;
+  padding:100px 0 100px 0;
+  background: linear-gradient(0.21deg, rgba(185, 210, 226, 0.9) -10.91%, rgba(159, 152, 192, 0.3) 131.58%);
+}
+.about h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #223b47;
+  margin-bottom: 30px;
+}
+.about p {
+  font-size: 16px;
+  line-height:1.5em;
+  width:100%;
+  text-align: justify;
+}
+.about .imgContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+.about img {
+  height: 250px;
+  width: 33%;
+  object-fit: cover;
+}
+
+
 /* Donate CSS */
 .donate {
   background-color: #b9d2e2;
@@ -245,27 +277,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
   -webkit-text-fill-color: #27667a !important;
 }
-
-/* .donate form button span {
-  z-index: 1;
-  position: relative;
-  color: #c1d8de;
-} */
-/* .donate form button:hover {
-  color:#fff;
-}
-.donate form button::before {
-  content: "";
-  background: #dad3d3;
-  width:0;
-  height:100%;
-  position: absolute;
-  top:0;
-  left:0;
-  z-index:0;
-  transition: 0.3s ease-in-out;
-} */
-
 
 /* Contact CSS */
 .contact {
