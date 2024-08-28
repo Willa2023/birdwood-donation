@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import logo from '../assets/img/KAKA.png';
-import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
+// import { HashLink } from 'react-router-hash-link';
 
 const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -32,7 +31,6 @@ const NavBar = () => {
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="#home">
-          {/* <img src={logo} alt="Logo" /> */}
           <h2>Birdwood Reserve Environmental Project</h2>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" >
@@ -43,7 +41,7 @@ const NavBar = () => {
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#about"  className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('about')}>About</Nav.Link>
               <Nav.Link href="#donate"  className={activeLink === 'donate' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('donate')}>Donate</Nav.Link>
-              <Nav.Link href="#contact"  className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}>Contact</Nav.Link>
+              <Nav.Link href="#contacts"  className={activeLink === 'contacts' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contacts')}>Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

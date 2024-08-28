@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import contactImg from '../assets/img/contact-img.svg';
 
 const Contact = () => {
@@ -72,7 +72,7 @@ const Contact = () => {
                                 </Col>
                                 <Col sm={12} className='px-1'>
                                     <textarea row="6" value={formDetails.message} placeholder="Message"  onChange={(e)=> onFormUpdate('message', e.target.value)} />
-                                    <button type="submit" ><span>{buttonText}</span></button>
+                                    <Button variant="primary" type="submit" ><span>{buttonText}</span></Button>
                                 </Col>
                                 {
                                     status.message &&

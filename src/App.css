@@ -91,7 +91,7 @@ nav.navbar {
   transition: 0.4s ease-in-out;
 }
 nav.navbar.scrolled {
-  padding:5px 0;
+  padding:10px 0;
   background-color: #d3dee8;
   background: linear-gradient(0.21deg, rgb(139, 172, 194) -10.91%, rgba(159, 152, 192, 1) 131.58%);
 
@@ -154,7 +154,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Banner CSS */
 .banner {
   margin-top: 0;
-  padding: 200px 0 500px 0;
+  padding: 200px 0 200px 0;
   background-image: url('./assets/img/banner-bg.jpg');
   background-position: top center;
   background-size:cover;
@@ -202,13 +202,76 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 
+/* Donate CSS */
+.donate {
+  background-color: #b9d2e2;
+  padding:100px 0 100px 0;
+  background: linear-gradient(180.21deg, rgba(185, 210, 226, 0.9) -10.91%, rgba(159, 152, 192, 0.3) 131.58%);
+}
+.donate button {
+  font-weight: 700;
+  color: #e5e5e5 !important;
+  background-color: #223b47;
+  padding: 14px 30px;
+  font-size: 18px;
+  margin: 15px 0 15px 0;
+  transition: 0.3s ease-in-out;
+}
+.donate .donate-info h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #223b47;
+}
+.donate .donate-info p {
+  color: #223b47;
+  margin: 20px 0;
+} 
+.donate .donate-form h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #223b47;
+}
+.donate .donate-form form input,.donate .donate-form form textarea {
+  width:100%;
+  color:#27667a;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(39, 102, 122);
+  border-radius: 20px;
+  margin: 0 0 10px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+  -webkit-text-fill-color: #27667a !important;
+}
+
+/* .donate form button span {
+  z-index: 1;
+  position: relative;
+  color: #c1d8de;
+} */
+/* .donate form button:hover {
+  color:#fff;
+}
+.donate form button::before {
+  content: "";
+  background: #dad3d3;
+  width:0;
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:0;
+  transition: 0.3s ease-in-out;
+} */
+
+
 /* Contact CSS */
 .contact {
-  /* background-image: url('./assets/img/banner-bg2.jpg'); */
   background-color: #b9d2e2;
   padding:20px 0 100px 0;
   background: linear-gradient(0.21deg, rgba(185, 210, 226, 0.9) -10.91%, rgba(159, 152, 192, 0.3) 131.58%);
-  /* background: linear-gradient(0.21deg, rgba(185, 210, 226, 0.9) -10.91%, rgba(66, 63, 83, 0.3) 131.58%); */
 }
 .contact img {
   width:80%;

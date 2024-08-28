@@ -1,14 +1,14 @@
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 
 
 const Banner = () => {
+    
 
     return (
         <section className="banner" id="home">
             <Container>
                 <Row className="align-items-top">
-                {/* <Col xs={12} md={12} xl={8}><span className="tagline">An Exciting New Track for Karori and New Access to Zealandia!</span></Col> */}
                     <Col xs={12} md={6} xl={6}>
                         <span className="tagline">An Exciting New Track for Karori and New Access to Zealandia!</span>
                         <p>KĀKĀ(Karori Kaitiaki) has teamed up with Rotary, supported by WCC and Zealandia, to design, fund and build an exciting new track from Birdwood Street - through Birdwood Reserve - to Zealandia.</p>
