@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Container, Row, Col, Button, Form, InputGroup } from 'react-bootstrap';
- 
+import { Row, Col, Button } from 'react-bootstrap';
+import { handleFormSubmit } from "../utils/formUtils";
+
 const DonateForm = () => {
     const formInitialDetails = {
         name: '',
@@ -26,26 +27,14 @@ const DonateForm = () => {
     
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setButtonText('Sending...');
-        let response = await fetch(`${process.env.REACT_APP_API_URL}/contact`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formDetails), 
-        });
-        setButtonText("Send");
-        if(response.status === 200) {
-            setStatus({
-                success: true,
-                message: 'Message Sent. Thank you for your Time.',
-            });
-        } else {
-            setStatus({
-                success: false,
-                message: 'Message Not Sent. Try Again?',
-            });
-        }
+        handleFormSubmit(
+            formDetails,
+            'donateform',
+            setButtonText,
+            setStatus,
+            setFormDetails,
+            formInitialDetails
+        );
         setFormDetails(formInitialDetails);
     }
     
@@ -62,7 +51,7 @@ const DonateForm = () => {
                             <textarea row="6" type="text" value={formDetails.address} placeholder="Address" onChange={(e)=> onFormUpdate('address', e.target.value)} />
                         </Col>
                         <Col sm={12} className='px-1'>
-                            <input type="text" value={formDetails.postcode} placeholder="Post Code" onChange={(e)=> onFormUpdate('address', e.target.value)} />
+                            <input type="number" value={formDetails.postcode} placeholder="Post Code" onChange={(e)=> onFormUpdate('postcode', e.target.value)} />
                         </Col>
                         <Col sm={12} className='px-1'>
                             <input type="email" value={formDetails.email} placeholder="Email"  onChange={(e)=> onFormUpdate('email', e.target.value)} />

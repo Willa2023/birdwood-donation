@@ -3,7 +3,6 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import {
   BrowserRouter as Router
 } from "react-router-dom";
-// import { HashLink } from 'react-router-hash-link';
 
 const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import contactImg from '../assets/img/contact-img.svg';
+import { handleFormSubmit } from '../utils/formUtils';
 
 const Contact = () => {
     const formInitialDetails = {
@@ -22,30 +23,17 @@ const Contact = () => {
         });
     }
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        setButtonText('Sending...');
-        let response = await fetch(`${process.env.REACT_APP_API_URL}/contact`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formDetails), 
-        });
-        setButtonText("Send");
-        if(response.status === 200) {
-            setStatus({
-                success: true,
-                message: 'Message Sent. Thank you for your Time.',
-            });
-        } else {
-            setStatus({
-                success: false,
-                message: 'Message Not Sent. Try Again?',
-            });
-        }
-        setFormDetails(formInitialDetails);
-    }
+        handleFormSubmit(
+            formDetails,
+            'contact',
+            setButtonText,
+            setStatus,
+            setFormDetails,
+            formInitialDetails
+        );
+    };
 
     return (
         <section className="contact" id="contacts">

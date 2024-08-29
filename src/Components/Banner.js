@@ -1,10 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 
-
 const Banner = () => {
-    
-
     return (
         <section className="banner" id="home">
             <Container>
