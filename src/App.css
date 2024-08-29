@@ -154,7 +154,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Banner CSS */
 .banner {
   margin-top: 0;
-  padding: 200px 0 500px 0;
+  padding: 200px 0 300px 0;
   background-image: url('./assets/img/banner-bg.jpg');
   background-position: top center;
   background-size:cover;
@@ -192,13 +192,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-decoration: none;
   color: inherit;
 }
-.banner button svg {
+.banner a svg {
   font-size: 25px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
-.banner button:hover svg {
+.banner a:hover svg {
   margin-left: 25px;
 }
 
