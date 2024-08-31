@@ -2,16 +2,16 @@
 @font-face {
   font-family: Centra;
   src: url('./assets/font/CentraNo2-Bold.ttf');
-  font-weight:700;
+  font-weight: 700;
 }
 @font-face {
   font-family: Centra;
-  src:url('./assets/font/CentraNo2-Medium.ttf');
+  src: url('./assets/font/CentraNo2-Medium.ttf');
   font-weight: 500;
 }
 @font-face {
   font-family: Centra;
-  src:url('./assets/font/CentraNo2-Book.ttf');
+  src: url('./assets/font/CentraNo2-Book.ttf');
   font-weight: 400;
 }
 
@@ -23,7 +23,7 @@
 }
 
 html {
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
 
@@ -32,21 +32,30 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: #fff !important;
-  color:#121212 !important;
+  color: #121212 !important;
   font-family: 'Centra', sans-serif !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin:0;
-  padding:0;
-  line-height:normal;
-}
-
-p, a, li, button, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
-  text-decoration:none;
+}
+
+p,
+a,
+li,
+button,
+ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
 }
 
 a:hover {
@@ -55,7 +64,7 @@ a:hover {
 
 img {
   width: 100%;
-  height:auto;
+  height: auto;
 }
 
 button {
@@ -63,11 +72,13 @@ button {
   background-color: transparent;
 }
 
-input:focus, textarea:focus, select:focus {
-  outline:none;
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
 }
 
-@media (min-width:1700px) {
+@media (min-width: 1700px) {
   main .container {
     max-width: 100%;
     padding: 0 150px;
@@ -84,34 +95,37 @@ p.danger {
 
 /* NavBar CSS */
 nav.navbar {
-  padding:18px 0;
+  padding: 18px 0;
   position: fixed;
   width: 100%;
-  z-index:1000;
+  z-index: 1000;
   transition: 0.4s ease-in-out;
 }
 nav.navbar.scrolled {
-  padding:10px 0;
+  padding: 10px 0;
   background-color: #dae8d3;
-  background: linear-gradient(0.21deg, rgb(62, 118, 67) -10.91%, rgb(135, 162, 125) 131.58%);
-
+  background: linear-gradient(
+    0.21deg,
+    rgb(62, 118, 67) -10.91%,
+    rgb(135, 162, 125) 131.58%
+  );
 }
 nav.navbar a.navbar-brand {
   color: #fff;
   text-align: center;
-  width:10%;
+  width: 10%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color:#fff;
+  color: #fff;
   letter-spacing: 0.8px;
-  padding:0 25px;
+  padding: 0 25px;
   font-size: 18px;
-  opacity:0.9;
+  opacity: 0.9;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link:active {
-  opacity:1;
+  opacity: 1;
 }
 span.navbar-text {
   display: flex;
@@ -119,12 +133,12 @@ span.navbar-text {
 }
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
-  outline:none;
+  outline: none;
   box-shadow: none;
 }
 nav.navbar .navbar-toggler-icon {
-  width:24px;
-  height:17px;
+  width: 24px;
+  height: 17px;
   background-image: none;
   position: relative;
   border-bottom: 2px solid #fff;
@@ -132,23 +146,23 @@ nav.navbar .navbar-toggler-icon {
   top: -2px;
 }
 nav.navbar .navbar-toggler-icon:focus {
-	border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 nav.navbar .navbar-toggler-icon:after {
-	top: 8px;
+  top: 8px;
 }
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-	transform: rotate(45deg);
-	background-color: #fff;
-	height: 2px;
+nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon:after {
+  transform: rotate(45deg);
+  background-color: #fff;
+  height: 2px;
 }
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
-	transform: translateY(8px) rotate(-45deg);
-	background-color: #fff;
-	height: 2px;
+nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon:before {
+  transform: translateY(8px) rotate(-45deg);
+  background-color: #fff;
+  height: 2px;
 }
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-	border-color: transparent;
+nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
+  border-color: transparent;
 }
 
 /* Banner CSS */
@@ -157,14 +171,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 200px 0 300px 0;
   background-image: url('./assets/img/banner-bg.jpg');
   background-position: top center;
-  background-size:cover;
+  background-size: cover;
   background-position: no-repeat;
 }
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(31, 68, 26, 0.8) -5.91%, rgba(26, 29, 17, 0.5) 111.58%);
+  background: linear-gradient(
+    90.21deg,
+    rgba(31, 68, 26, 0.8) -5.91%,
+    rgba(26, 29, 17, 0.5) 111.58%
+  );
   font-size: 28px;
   color: #eee;
   margin-bottom: 16px;
@@ -174,8 +192,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fff;
   font-size: 16px;
   letter-spacing: 0.8px;
-  line-height:1.5em;
-  width:100%;
+  line-height: 1.5em;
+  width: 100%;
   text-align: justify;
 }
 .banner button {
@@ -204,8 +222,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* About CSS */
 .about {
   background-color: #dae8d3;
-  padding:100px 0 100px 0;
-  background: linear-gradient(0.21deg, rgba(204, 226, 185, 0.9) -10.91%, rgba(155, 233, 151, 0.3) 131.58%);
+  padding: 100px 0 100px 0;
+  background: linear-gradient(
+    0.21deg,
+    rgba(204, 226, 185, 0.9) -10.91%,
+    rgba(155, 233, 151, 0.3) 131.58%
+  );
 }
 .about h2 {
   font-size: 32px;
@@ -215,8 +237,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .about p {
   font-size: 16px;
-  line-height:1.5em;
-  width:100%;
+  line-height: 1.5em;
+  width: 100%;
   text-align: justify;
 }
 .about .imgContainer {
@@ -236,7 +258,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .supporters {
   display: flex;
   background-color: #dae8d3;
-  background: linear-gradient(180.21deg, rgba(204, 226, 185, 0.9) -10.91%, rgba(155, 233, 151, 0.3) 131.58%);
+  background: linear-gradient(
+    180.21deg,
+    rgba(204, 226, 185, 0.9) -10.91%,
+    rgba(155, 233, 151, 0.3) 131.58%
+  );
 }
 .supporters h2 {
   font-size: 32px;
@@ -246,8 +272,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .supporters p {
   font-size: 22px;
-  line-height:1.5em;
-  width:100%;
+  line-height: 1.5em;
+  width: 100%;
   text-align: justify;
 }
 .supporterContent {
@@ -270,14 +296,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transform-origin: center;
 }
 
-
 /* Donate CSS */
 .donate {
   background-color: #dae8d3;
-  padding:100px 0 100px 0;
-  background: linear-gradient(0.21deg, rgba(204, 226, 185, 0.9) -10.91%, rgba(155, 233, 151, 0.3) 131.58%);
+  padding: 100px 0 100px 0;
+  background: linear-gradient(
+    0.21deg,
+    rgba(204, 226, 185, 0.9) -10.91%,
+    rgba(155, 233, 151, 0.3) 131.58%
+  );
 }
-.donate button {
+.donate .donate-info button {
   font-weight: 700;
   color: #e5e5e5 !important;
   background-color: #223b47;
@@ -286,53 +315,60 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 15px 0 15px 0;
   transition: 0.3s ease-in-out;
 }
-.donate .donate-info h2 {
-  font-size: 32px;
-  font-weight: 500;
-  color: #223b47;
-}
-.donate .donate-info p {
-  color: #223b47;
-  margin: 20px 0;
-} 
+.donate .donate-info h2,
 .donate .donate-form h2 {
   font-size: 32px;
   font-weight: 500;
   color: #223b47;
+  margin: 20px 0;
 }
-.donate .donate-form form input,.donate .donate-form form textarea {
-  width:100%;
-  color:#27667a;
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(39, 102, 122);
-  border-radius: 20px;
-  margin: 0 0 10px 0;
-  padding: 18px 26px;
+.donate .donate-info p {
+  color: #223b47;
+  margin: 20px 0;
+}
+.donate .donate-form form input,
+.donate .donate-form form textarea {
+  width: 100%;
+  color: #27667a;
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
   -webkit-text-fill-color: #27667a !important;
+}
+.donate .donate-form .submit-donate-form {
+  font-weight: 700;
+  color: #e5e5e5 !important;
+  background-color: #223b47;
+  padding: 14px 30px;
+  font-size: 18px;
+  margin: 15px 0 15px 0;
+  transition: 0.3s ease-in-out;
 }
 
 /* Contact CSS */
 .contact {
   background-color: #dae8d3;
-  padding:20px 0 100px 0;
-  background: linear-gradient(180.21deg, rgba(204, 226, 185, 0.9) -10.91%, rgba(155, 233, 151, 0.3) 131.58%);
+  padding: 20px 0 100px 0;
+  background: linear-gradient(
+    180.21deg,
+    rgba(204, 226, 185, 0.9) -10.91%,
+    rgba(155, 233, 151, 0.3) 131.58%
+  );
 }
 .contact img {
-  width:80%;
+  width: 80%;
 }
 .contact h2 {
-  font-size:45px;
+  font-size: 45px;
   font-weight: 700;
   margin-bottom: 30px;
   color: #223b47;
 }
-.contact form input, .contact form textarea {
-  width:100%;
-  color:#27667a;
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  color: #27667a;
   background: rgba(255, 255, 255, 0.7);
   border: 1px solid rgba(39, 102, 122);
   border-radius: 20px;
@@ -344,16 +380,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
   -webkit-text-fill-color: #27667a !important;
 }
-.contact form input:focus, .contact form textarea:focus {
+.contact form input:focus,
+.contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
-  color:#27667a;
+  color: #27667a;
 }
-.contact form input::placeholder, .contact form textarea::placeholder {
+.contact form input::placeholder,
+.contact form textarea::placeholder {
   font-size: 18px;
   font-weight: 400;
 }
-.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
-  color:#121212;
+.contact form input:focus::placeholder,
+.contact form textarea:focus::placeholder {
+  color: #121212;
   opacity: 0.6;
 }
 .contact form button {
@@ -371,17 +410,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #c1d8de;
 }
 .contact form button:hover {
-  color:#fff;
+  color: #fff;
 }
 .contact form button::before {
-  content: "";
+  content: '';
   background: #dad3d3;
-  width:0;
-  height:100%;
+  width: 0;
+  height: 100%;
   position: absolute;
-  top:0;
-  left:0;
-  z-index:0;
+  top: 0;
+  left: 0;
+  z-index: 0;
   transition: 0.3s ease-in-out;
 }
 .contact form p {
@@ -391,7 +430,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Footer CSS */
 .footer {
   background: #dae8d3;
-  background: linear-gradient(0.21deg, rgba(204, 226, 185, 0.9) -10.91%, rgba(155, 233, 151, 0.3) 131.58%);
+  background: linear-gradient(
+    0.21deg,
+    rgba(204, 226, 185, 0.9) -10.91%,
+    rgba(155, 233, 151, 0.3) 131.58%
+  );
   /* background: linear-gradient(180.21deg, rgba(185, 210, 226, 0.9) -10.91%, rgba(66, 63, 83, 0.3) 131.58%); */
   padding: 0 0 50px 0;
 }
@@ -400,13 +443,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 16px;
   color: #223b47;
 }
-
-
-
-
-
-
-
 
 /* Original CSS from Create React App */
 .App {
@@ -447,4 +483,3 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     transform: rotate(360deg);
   }
 }
-
