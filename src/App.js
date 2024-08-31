@@ -5,6 +5,7 @@ import About from './Components/About';
 import Donate from './Components/Donate';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
+import Supporters from './Components/Supporters';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App()  {
@@ -13,6 +14,7 @@ function App()  {
       <NavBar />
       <Banner />
       <About />
+      <Supporters />
       <Donate />
       <Contact />
       <Footer />

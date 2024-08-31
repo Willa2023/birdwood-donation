@@ -12,7 +12,7 @@ const Donate = () => {
               <p>Donations: Rotary Club of Karori Trust Acc</p>
               <p>Account: 03-1540-0014117-003</p>
               <p>Ref: BirdwoodTrack</p>
-              <p>To help, contact:</p>
+              <p><strong>To help, contact:</strong></p>
               <p>Dawn at dawn@sgcnz.org.nz</p>
               <p>Siva at karorikaitiaki@gmail.com</p>
               <Button variant="primary">Donate</Button>

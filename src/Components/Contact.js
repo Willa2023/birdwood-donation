@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import contactImg from '../assets/img/contact-img.svg';
+import contactImg from '../assets/img/contact_us.jpg';
 import { handleFormSubmit } from '../utils/formUtils';
 
 const Contact = () => {
