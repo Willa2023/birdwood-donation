@@ -248,7 +248,9 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   width: 100%;
   margin-top: 40px;
 }
-.about img {
+.about .about1,
+.about .about2,
+.about .about3 {
   height: 250px;
   width: 33%;
   object-fit: cover;
@@ -280,7 +282,8 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
-.supporters .supporterImgContainer {
+.supporters .supporterImgContainer,
+.supporters .organizationImgContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -288,8 +291,10 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 .supporters img {
   max-width: 300px;
+  max-height: 100px;
   height: auto;
   object-fit: contain;
+  margin: 10px 10px 10px 10px;
 }
 .supporters img.scaled {
   transform: scale(0.5);
@@ -344,6 +349,10 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   font-size: 18px;
   margin: 15px 0 15px 0;
   transition: 0.3s ease-in-out;
+}
+.donate p {
+  color: #223b47;
+  text-align: justify;
 }
 
 /* Contact CSS */

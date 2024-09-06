@@ -172,7 +172,7 @@ const DonateForm = () => {
                   <LocalizationProvider dateAdapter={AdapterDayjs}>
                     <DemoContainer components={['DatePicker']}>
                       <DatePicker
-                        label="Date paid into RC Karori Trust Account"
+                        label="Date paid into KĀKĀ Account"
                         sx={{
                           mb: 1,
                           width: '100%',
@@ -211,7 +211,7 @@ const DonateForm = () => {
                   <LocalizationProvider dateAdapter={AdapterDayjs}>
                     <DemoContainer fullWidth components={['DatePicker']}>
                       <DatePicker
-                        label="Amount will be paid before: "
+                        label="Amount will be paid by "
                         sx={{
                           mb: 1,
                           width: '100%',
@@ -241,45 +241,15 @@ const DonateForm = () => {
                 </p>
               </Col>
             )}
+            <Col>
+              <p>
+                * You agree to receive email communication from us by submitting
+                this form and understand that your contact information will be
+                stored with us.
+              </p>
+            </Col>
           </Row>
-
-          {/* <Row>
-                        <Col sm={12}  className='px-1'>
-                            <input type="text" value={formDetails.name} placeholder="Name" onChange={(e)=> onFormUpdate('name', e.target.value)} />
-                        </Col>
-                        <Col sm={12} className='px-1'>
-                            <textarea row="6" type="text" value={formDetails.address} placeholder="Address" onChange={(e)=> onFormUpdate('address', e.target.value)} />
-                        </Col>
-                        <Col sm={12} className='px-1'>
-                            <input type="number" value={formDetails.postcode} placeholder="Post Code" onChange={(e)=> onFormUpdate('postcode', e.target.value)} />
-                        </Col>
-                        <Col sm={12} className='px-1'>
-                            <input required type="email" value={formDetails.email} placeholder="Email"  onChange={(e)=> onFormUpdate('email', e.target.value)} />
-                        </Col>
-                        <Col sm={6} className='px-1'>
-                          <input type="number" value={formDetails.donatedAmount} placeholder="Donated Amount" min="1" onChange={(e)=> handleAmountChange('donatedAmount', e.target.value)} />
-                        </Col>
-                        <Col sm={6} className='px-1'>
-                            <input type="date" value={formDetails.donatedDate} placeholder="Donated Date"  onChange={(e)=> onFormUpdate('donatedDate', e.target.value)} />
-                        </Col>
-                        <Col sm={6} className='px-1'>
-                            <input type="number" value={formDetails.pledgedAmount} placeholder="Pledged Amount" min="1" onChange={(e)=> handleAmountChange('pledgedAmount', e.target.value)} />
-                        </Col>
-                        <Col sm={6} className='px-1'>
-                            <input type="date" value={formDetails.pledgedDate} placeholder="Pledged Date"  onChange={(e)=> onFormUpdate('pledgedDate', e.target.value)} />
-                        </Col>
-                        <Col sm={12} className='px-1'>
-                            <Button variant="primary" type="submit" ><span>{buttonText}</span></Button>
-                        </Col>
-                        {
-                            status.message &&
-                            <Col>
-                                <p className={status.success === false ? 'danger' : 'success'}>{status.message}</p>
-                            </Col>
-                        }
-                    </Row> */}
         </form>
-        {/* //You agree to receive email communication from us by submitting this form and understand that your contact information will be stored with us. */}
       </Col>
     </>
   );
