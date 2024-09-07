@@ -1,4 +1,4 @@
-import { Container, Row, Col } from 'react-bootstrap';
+import { Button, Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 
 const Banner = () => {
@@ -10,6 +10,7 @@ const Banner = () => {
             <span className="tagline">
               An Exciting Environmental Project for Birdwood Reserve, Karori
             </span>
+            <br />
             <p>
               Imagine being greeted by a bevy of birds, beautiful bush, and a
               babbling stream as you enter and explore the Birdwood Reserve in a
@@ -17,6 +18,11 @@ const Banner = () => {
             </p>
             <a href="#about" className="btn-moreInfo">
               More Info <ArrowRightCircle size={25} />
+            </a>
+            <br />
+            <br />
+            <a href="#donate" className="btn-donate">
+              <Button variant="primary">Donate Now</Button>
             </a>
           </Col>
         </Row>

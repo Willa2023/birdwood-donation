@@ -218,6 +218,14 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .banner a:hover svg {
   margin-left: 25px;
 }
+.banner .btn-donate button {
+  border: #fff;
+  background-color: #1b3f22;
+  padding: 14px 30px;
+  font-size: 18px;
+  margin: 15px 0 15px 0;
+  transition: 0.3s ease-in-out;
+}
 
 /* About CSS */
 .about {
@@ -271,6 +279,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   font-weight: 500;
   color: #223b47;
   margin-bottom: 30px;
+  margin-right: 200px;
 }
 .supporters p {
   font-size: 22px;
@@ -278,27 +287,31 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   width: 100%;
   text-align: justify;
 }
-.supporterContent {
+.supporterContent,
+.organizationContent {
   display: flex;
   align-items: center;
 }
 .supporters .supporterImgContainer,
 .supporters .organizationImgContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 100px;
+  margin-bottom: 10px;
 }
-.supporters img {
+.supporters .supporterImgContainer img {
   max-width: 300px;
-  max-height: 100px;
   height: auto;
   object-fit: contain;
-  margin: 10px 10px 10px 10px;
+  margin: 0 0 0 20px;
 }
-.supporters img.scaled {
+.supporters .supporterImgContainer img.scaled {
   transform: scale(0.5);
   transform-origin: center;
+}
+.supporters .organizationImgContainer img {
+  max-height: 100px;
+  width: auto;
+  margin: 0 0 0 50px;
+  object-fit: contain;
 }
 
 /* Donate CSS */
