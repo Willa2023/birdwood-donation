@@ -19,8 +19,8 @@ const Donate = () => {
             <p>
               <strong>To help, contact:</strong>
             </p>
-            <p>Dawn at dawn@sgcnz.org.nz</p>
-            <p>Siva at karorikaitiaki@gmail.com</p>
+            <p>Dawn at Action-Sanders@xtra.co.nz</p>
+            <p>Siva at karori.kaitiaki@gmail.com</p>
             <Button variant="primary" onClick={handleDonateClick}>
               Donate
             </Button>
