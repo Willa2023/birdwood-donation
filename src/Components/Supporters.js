@@ -2,7 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import wcc from '../assets/img/WCC.png';
 import transpower from '../assets/img/transpower-logo.png';
 import kaka from '../assets/img/KAKA.png';
-import rotary from '../assets/img/Rotary.JPG';
+import clubRotary from '../assets/img/club-rotary.png';
 
 const Supporters = () => {
   return (
@@ -29,8 +29,8 @@ const Supporters = () => {
           </Col>
           <Col xs={12} md={6} xl={6}>
             <div className="organizationImgContainer">
+              <img className="club-rotary" src={clubRotary} alt="Club-Rotary" />
               <img className="kaka" src={kaka} alt="Kaka" />
-              <img className="rotary" src={rotary} alt="Rotary" />
             </div>
           </Col>
         </Row>
