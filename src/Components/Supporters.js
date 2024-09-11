@@ -3,6 +3,7 @@ import wcc from '../assets/img/WCC.png';
 import transpower from '../assets/img/transpower-logo.png';
 import kaka from '../assets/img/KAKA.png';
 import clubRotary from '../assets/img/club-rotary.png';
+import portRotary from '../assets/img/rotary_port_Nic.png';
 
 const Supporters = () => {
   return (
@@ -11,7 +12,7 @@ const Supporters = () => {
         <Row className="align-items-center">
           <Col xs={12} md={3} xl={3}>
             <div className="supporterContent">
-              <h2>Our Supporters</h2>
+              <h2>Supporters</h2>
             </div>
           </Col>
           <Col xs={12} md={6} xl={6}>
@@ -24,13 +25,14 @@ const Supporters = () => {
         <Row className="align-items-center">
           <Col xs={12} md={3} xl={3}>
             <div className="organizationContent">
-              <h2>Our Organizations</h2>
+              <h2>Organisations</h2>
             </div>
           </Col>
           <Col xs={12} md={6} xl={6}>
             <div className="organizationImgContainer">
               <img className="club-rotary" src={clubRotary} alt="Club-Rotary" />
               <img className="kaka" src={kaka} alt="Kaka" />
+              <img className="portRotary" src={portRotary} alt="portRotary" />
             </div>
           </Col>
         </Row>
