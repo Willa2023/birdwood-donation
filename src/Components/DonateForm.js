@@ -225,6 +225,13 @@ const DonateForm = () => {
                 </Col>
               </>
             )}
+            <Col>
+              <p>
+                * You agree to receive email communication from us by submitting
+                this form and understand that your contact information will be
+                stored with us.
+              </p>
+            </Col>
             <Col sm={12} className="px-1">
               <Button
                 variant="primary"
@@ -241,13 +248,7 @@ const DonateForm = () => {
                 </p>
               </Col>
             )}
-            <Col>
-              <p>
-                * You agree to receive email communication from us by submitting
-                this form and understand that your contact information will be
-                stored with us.
-              </p>
-            </Col>
+
           </Row>
         </form>
       </Col>
