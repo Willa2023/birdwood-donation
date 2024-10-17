@@ -1,9 +1,9 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import wcc from '../assets/img/WCC.png';
 import transpower from '../assets/img/transpower-logo.png';
-import kaka from '../assets/img/KAKA.png';
-import clubRotary from '../assets/img/club-rotary.png';
-import portRotary from '../assets/img/rotary_port_Nic.png';
+import kaka from '../assets/img/new-Kaka.png';
+import clubRotary from '../assets/img/new-Rotary-K.png';
+import portRotary from '../assets/img/new-Rotary-P.png';
 
 const Supporters = () => {
   return (
