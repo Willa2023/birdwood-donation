@@ -2,17 +2,9 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import DonateForm from './DonateForm';
 
 const Donate = () => {
-<<<<<<< HEAD
   // const handleDonateClick = () => {
   //   window.location.href = 'https://buy.stripe.com/test_aEU7t87Eb6G938kfYY';
   // };
-=======
-  const donationUrl = process.env.REACT_APP_DONATION_URL;
-
-  const handleDonateClick = () => {
-    window.location.href = donationUrl;
-  };
->>>>>>> 51d625836c20c549870ace929fc82d1f93e2f96a
 
   return (
     <section className="donate" id="donate">
@@ -20,7 +12,6 @@ const Donate = () => {
         <Row className="align-items-start">
           <Col md={6} className="donate-info">
             <h2>Donation Info</h2>
-<<<<<<< HEAD
             {/* <p>Two Ways to Donate:</p> */}
             <p><strong>By Internet Banking</strong></p>
             <p>Account Name: Karori Kaitiaki (KĀKĀ) Inc </p>
@@ -28,19 +19,6 @@ const Donate = () => {
             <p>Ref: BirdwoodReserve</p>
             {/* <p><strong>2. By Credit/Debit Cards</strong></p> */}
             {/* <Button variant="primary" onClick={handleDonateClick}>
-=======
-            <p>Two Ways to Donate:</p>
-            <p>
-              <strong>1. By Internet Banking</strong>
-            </p>
-            <p>Account Name: Karori Kaitiaki (KĀKĀ) Inc </p>
-            <p>Account Number: 03-1540-0065715-00</p>
-            <p>Ref: BirdwoodReserve</p>
-            <p>
-              <strong>2. By Credit/Debit Cards</strong>
-            </p>
-            <Button variant="primary" onClick={handleDonateClick}>
->>>>>>> 51d625836c20c549870ace929fc82d1f93e2f96a
               Donate
             </Button> */}
             <p>
