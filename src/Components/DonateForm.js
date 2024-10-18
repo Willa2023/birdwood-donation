@@ -229,7 +229,7 @@ const DonateForm = () => {
               <p>
                 * You agree to receive email communication from us by submitting
                 this form and understand that your contact information will be
-                stored with us.
+                stored with us. We reserve the right to share the information with affiliated groups.
               </p>
             </Col>
             <Col sm={12} className="px-1">
