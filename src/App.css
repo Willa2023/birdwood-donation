@@ -368,12 +368,66 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   text-align: justify;
 }
 
+/* Quiz CSS */
+.quiz {
+  background-color: #dae8d3;
+  padding: 100px 0 100px 0;
+  background: linear-gradient(
+    180.21deg,
+    rgba(204, 226, 185, 0.9) -10.91%,
+    rgba(155, 233, 151, 0.3) 131.58%
+  );
+}
+.quiz .quiz-info button {
+  font-weight: 700;
+  color: #e5e5e5 !important;
+  background-color: #223b47;
+  padding: 14px 30px;
+  font-size: 18px;
+  margin: 15px 0 15px 0;
+  transition: 0.3s ease-in-out;
+}
+.quiz .quiz-info h2,
+.quiz .quiz-booking-form h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #223b47;
+  margin: 20px 0;
+}
+.quiz .quiz-info p {
+  color: #223b47;
+  margin: 20px 0;
+}
+.quiz .quiz-booking-form form input,
+.quiz .quiz-booking-form form textarea {
+  width: 100%;
+  color: #27667a;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+  -webkit-text-fill-color: #27667a !important;
+}
+.quiz .quiz-booking-form .submit-quiz-booking-form {
+  font-weight: 700;
+  color: #e5e5e5 !important;
+  background-color: #223b47;
+  padding: 14px 30px;
+  font-size: 18px;
+  margin: 15px 0 15px 0;
+  transition: 0.3s ease-in-out;
+}
+.quiz p {
+  color: #223b47;
+  text-align: justify;
+}
+
 /* Contact CSS */
 .contact {
   background-color: #dae8d3;
   padding: 20px 0 100px 0;
   background: linear-gradient(
-    180.21deg,
+    0.21deg,
     rgba(204, 226, 185, 0.9) -10.91%,
     rgba(155, 233, 151, 0.3) 131.58%
   );
@@ -453,7 +507,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .footer {
   background: #dae8d3;
   background: linear-gradient(
-    0.21deg,
+    180.21deg,
     rgba(204, 226, 185, 0.9) -10.91%,
     rgba(155, 233, 151, 0.3) 131.58%
   );
