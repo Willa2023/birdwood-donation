@@ -1,6 +1,5 @@
-export const handleFormSubmit = async (
+export const handleBookingFormSubmit = async (
   formDetails,
-  endpoint,
   setButtonText,
   setStatus,
   setFormDetails,
@@ -9,7 +8,7 @@ export const handleFormSubmit = async (
   try {
     setButtonText('Sending...');
     const response = await fetch(
-      `${process.env.REACT_APP_API_URL}/${endpoint}`,
+      `${process.env.REACT_APP_API_URL}/bookingform`,
       {
         method: 'POST',
         headers: {

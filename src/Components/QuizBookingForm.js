@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
-import { handleFormSubmit } from '../utils/bookingFormUtils';
+import { handleBookingFormSubmit } from '../utils/bookingFormUtils';
 import { TextField, MenuItem } from '@mui/material';
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
@@ -43,9 +43,8 @@ const QuizBookingForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    handleFormSubmit(
+    handleBookingFormSubmit(
       formDetails,
-      'bookingform',
       setButtonText,
       setStatus,
       setFormDetails,
@@ -109,7 +108,7 @@ const QuizBookingForm = () => {
                 required
                 id="outlined-multiline-static"
                 label="Contact Person's Email"
-                rows={2}
+                type="email"
                 sx={{
                   mb: 1,
                   backgroundColor: 'rgba(255, 255, 255, 0.7)',
