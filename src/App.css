@@ -168,12 +168,41 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 /* Banner CSS */
 .banner {
   margin-top: 0;
-  padding: 200px 0 300px 0;
+  padding: 200px 0 100px 0;
   background-image: url('./assets/img/banner-bg.jpg');
   background-position: top center;
   background-size: cover;
   background-position: no-repeat;
 }
+
+.carousel-item {
+  height: 400px; 
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.carousel-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-content img {
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.carousel-control-prev{
+  margin-left: -70px;
+}
+.carousel-control-next{
+  margin-right: -70px;
+}
+
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -205,6 +234,23 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
+
+.btn-moreInfo {
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+}
+
+.btn-quizNight {
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+
 .banner a {
   text-decoration: none;
   color: inherit;
