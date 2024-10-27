@@ -368,6 +368,7 @@ nav.navbar .navbar-nav {
 .supporters .supporterImgContainer,
 .supporters .organizationImgContainer {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 10px;
 }
 .supporters .supporterImgContainer img {
@@ -470,7 +471,7 @@ nav.navbar .navbar-nav {
   margin: 20px 0;
 }
 .quiz .align-items-start h3{
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 500;
   color: #223b47;
 }
