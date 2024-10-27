@@ -13,7 +13,7 @@ const Quiz = () => {
           <Col md={6} className="quiz-info">
             <h2>Quiz Night Information</h2>
             <p><strong>Date & Time: </strong></p>
-            <p>Sunday 24th November 7:00pm-9pm</p>
+            <p>Sunday 24th November 7:00pm-9:30pm</p>
             <p><strong>Address: </strong></p>
             <p>Karori Tap House, 162 Karori Road, Wellington</p>
             <p><strong>Activity Fee: </strong></p>
