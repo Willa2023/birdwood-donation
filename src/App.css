@@ -368,9 +368,9 @@ nav.navbar .navbar-nav {
 .supporters .supporterImgContainer,
 .supporters .organizationImgContainer {
   display: flex;
-  flex-wrap: wrap;
   margin-bottom: 10px;
 }
+
 .supporters .supporterImgContainer img {
   max-width: 300px;
   height: auto;
@@ -386,6 +386,18 @@ nav.navbar .navbar-nav {
   width: auto;
   margin: 0 0 0 50px;
   object-fit: contain;
+}
+@media (max-width: 768px) {
+  .supporters .supporterImgContainer,
+  .supporters .organizationImgContainer {
+    flex-direction: column; /* 改为纵向排列 */
+    align-items: center; /* 图片在容器内居中 */
+  }
+
+  .supporters .supporterImgContainer img,
+  .supporters .organizationImgContainer img {
+    margin: 10px 0; /* 调整图片间距 */
+  }
 }
 
 /* Donate CSS */
