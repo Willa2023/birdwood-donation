@@ -462,12 +462,17 @@ nav.navbar .navbar-nav {
 }
 .quiz .quiz-info h2,
 .quiz .quiz-booking-form h2,
-.quiz .align-items-start h2 
+.quiz .align-items-start h2
 {
   font-size: 32px;
   font-weight: 500;
   color: #223b47;
   margin: 20px 0;
+}
+.quiz .align-items-start h3{
+  font-size: 28px;
+  font-weight: 500;
+  color: #223b47;
 }
 .quiz .quiz-info p {
   color: #223b47;

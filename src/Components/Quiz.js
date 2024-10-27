@@ -8,6 +8,7 @@ const Quiz = () => {
       <Container>
         <Row className="align-items-start">
           <h2>Quiz Night</h2>
+          <h3>To raise funds for our groundbreaking environmental project!</h3>
           <img src={quizImg} alt="QuizImg" />
           <Col md={6} className="quiz-info">
             <h2>Quiz Night Information</h2>
