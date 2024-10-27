@@ -9,7 +9,6 @@ const Banner = () => {
         <Row className="align-items-top">
           <Col xs={12} md={5} xl={5}>
             <Carousel>
-
               <Carousel.Item>
                 <div className="carousel-content">
                   <span className="tagline">
@@ -30,7 +29,7 @@ const Banner = () => {
                 <div className="carousel-content">
                   <img className="d-block w-100" src={bg2} alt="Second slide" />
                   <a href="#quiz" className="btn-quizNight">
-                    Register for Quiz Night <ArrowRightCircle size={25}/>
+                    Booking for Quiz Night <ArrowRightCircle size={25}/>
                   </a>
                 </div>
               </Carousel.Item>

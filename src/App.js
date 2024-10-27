@@ -15,9 +15,9 @@ function App() {
       <NavBar />
       <Banner />
       <About />
+      <Quiz />
       <Supporters />
       <Donate />
-      <Quiz />
       <Contact />
       <Footer />
     </div>

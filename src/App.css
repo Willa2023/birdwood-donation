@@ -164,6 +164,33 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   border-color: transparent;
 }
+nav.navbar .navbar-nav {
+  margin-left: auto;
+}
+
+@media (max-width: 991px) {
+  nav.navbar .navbar-nav {
+    text-align: right;
+    width: 100%;
+  }
+}
+.navbar-brand h2 {
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand h2 {
+    font-size: 20px;
+  }
+}
+
 
 /* Banner CSS */
 .banner {
@@ -280,7 +307,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   background: linear-gradient(
     0.21deg,
     rgba(204, 226, 185, 0.9) -10.91%,
-    rgba(155, 233, 151, 0.3) 131.58%
+    rgba(231, 241, 230, 0.3) 131.58%
   );
 }
 .about h2 {
@@ -315,9 +342,9 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   display: flex;
   background-color: #dae8d3;
   background: linear-gradient(
-    180.21deg,
+    0.21deg,
     rgba(204, 226, 185, 0.9) -10.91%,
-    rgba(155, 233, 151, 0.3) 131.58%
+    rgba(231, 241, 230, 0.3) 131.58%
   );
 }
 .supporters h2 {
@@ -365,9 +392,9 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   background-color: #dae8d3;
   padding: 100px 0 100px 0;
   background: linear-gradient(
-    0.21deg,
+    180.21deg,
     rgba(204, 226, 185, 0.9) -10.91%,
-    rgba(155, 233, 151, 0.3) 131.58%
+    rgba(231, 241, 230, 0.3) 131.58%
   );
 }
 .donate .donate-info button {
@@ -417,11 +444,11 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 /* Quiz CSS */
 .quiz {
   background-color: #dae8d3;
-  padding: 100px 0 100px 0;
+  padding: 0 0 100px 0;
   background: linear-gradient(
     180.21deg,
     rgba(204, 226, 185, 0.9) -10.91%,
-    rgba(155, 233, 151, 0.3) 131.58%
+    rgba(231, 241, 230, 0.3) 131.58%
   );
 }
 .quiz .quiz-info button {
@@ -434,7 +461,9 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
 }
 .quiz .quiz-info h2,
-.quiz .quiz-booking-form h2 {
+.quiz .quiz-booking-form h2,
+.quiz .align-items-start h2 
+{
   font-size: 32px;
   font-weight: 500;
   color: #223b47;
@@ -475,7 +504,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   background: linear-gradient(
     0.21deg,
     rgba(204, 226, 185, 0.9) -10.91%,
-    rgba(155, 233, 151, 0.3) 131.58%
+    rgba(231, 241, 230, 0.3) 131.58%
   );
 }
 .contact img {
@@ -555,7 +584,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   background: linear-gradient(
     180.21deg,
     rgba(204, 226, 185, 0.9) -10.91%,
-    rgba(155, 233, 151, 0.3) 131.58%
+    rgba(231, 241, 230, 0.3) 131.58%
   );
   /* background: linear-gradient(180.21deg, rgba(185, 210, 226, 0.9) -10.91%, rgba(66, 63, 83, 0.3) 131.58%); */
   padding: 0 0 50px 0;

@@ -218,10 +218,7 @@ const QuizBookingForm = () => {
               <p>Account #: 03-1540-0065715-00</p>
               <p>Ref: BREPGQuiz</p> */}
               <br />
-              <p>
-                * Single ticket bookers will be placed on a table to make up 6
-                Booking and payment must be made prior to the event
-              </p>
+              
               <p>
                 * You agree to receive email communication from us by submitting
                 this form and understand that your contact information will be
