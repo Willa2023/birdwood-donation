@@ -200,6 +200,7 @@ nav.navbar .navbar-nav {
   background-position: top center;
   background-size: cover;
   background-position: no-repeat;
+  overflow: hidden;
 }
 
 .carousel-item {
