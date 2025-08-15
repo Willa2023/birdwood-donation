@@ -191,7 +191,6 @@ nav.navbar .navbar-nav {
   }
 }
 
-
 /* Banner CSS */
 .banner {
   margin-top: 0;
@@ -204,7 +203,7 @@ nav.navbar .navbar-nav {
 }
 
 .carousel-item {
-  height: 400px; 
+  height: 400px;
   display: flex;
   /* align-items: center;
   justify-content: center; */
@@ -224,10 +223,10 @@ nav.navbar .navbar-nav {
   object-fit: cover;
 }
 
-.carousel-control-prev{
+.carousel-control-prev {
   margin-left: -70px;
 }
-.carousel-control-next{
+.carousel-control-next {
   margin-right: -70px;
 }
 
@@ -277,7 +276,6 @@ nav.navbar .navbar-nav {
   margin-top: 10px;
   padding: 20px;
 }
-
 
 .banner a {
   text-decoration: none;
@@ -476,14 +474,13 @@ nav.navbar .navbar-nav {
 }
 .quiz .quiz-info h2,
 .quiz .quiz-booking-form h2,
-.quiz .align-items-start h2
-{
+.quiz .align-items-start h2 {
   font-size: 32px;
   font-weight: 500;
   color: #223b47;
   margin: 20px 0;
 }
-.quiz .align-items-start h3{
+.quiz .align-items-start h3 {
   font-size: 20px;
   font-weight: 500;
   color: #223b47;

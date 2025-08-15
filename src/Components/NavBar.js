@@ -62,7 +62,7 @@ const NavBar = () => {
               >
                 Donate
               </Nav.Link>
-              <Nav.Link
+              {/* <Nav.Link
                 href="#quiz"
                 className={
                   activeLink === 'quiz' ? 'active navbar-link' : 'navbar-link'
@@ -70,7 +70,7 @@ const NavBar = () => {
                 onClick={() => onUpdateActiveLink('quiz')}
               >
                 Quiz
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link
                 href="#contacts"
                 className={
