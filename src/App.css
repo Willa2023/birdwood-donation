@@ -205,8 +205,8 @@ nav.navbar .navbar-nav {
 .carousel-item {
   height: 400px;
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-content {
@@ -267,6 +267,9 @@ nav.navbar .navbar-nav {
   text-align: left;
   width: 100%;
   padding: 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
 }
 
 .btn-quizNight {
@@ -275,6 +278,9 @@ nav.navbar .navbar-nav {
   width: 100%;
   margin-top: 10px;
   padding: 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
 }
 
 .banner a {
@@ -336,12 +342,106 @@ nav.navbar .navbar-nav {
   object-fit: cover;
 }
 
+/* Quiz CSS */
+.quiz {
+  background-color: #dae8d3;
+  padding: 0 0 100px 0;
+  background: linear-gradient(
+    /* 180.21deg, */ 0.21deg,
+    rgba(204, 226, 185, 0.9) -10.91%,
+    rgba(231, 241, 230, 0.3) 131.58%
+  );
+}
+.quiz .quiz-info button {
+  font-weight: 700;
+  color: #e5e5e5 !important;
+  background-color: #223b47;
+  padding: 14px 30px;
+  font-size: 18px;
+  margin: 15px 0 15px 0;
+  transition: 0.3s ease-in-out;
+}
+.quiz .quiz-info h2,
+.quiz .quiz-booking-form h2,
+.quiz .align-items-start h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #223b47;
+  margin: 20px 0;
+}
+.quiz .align-items-start h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #223b47;
+}
+.quiz .quiz-info p {
+  color: #223b47;
+  margin: 20px 0;
+}
+.quiz .quiz-booking-form form input,
+.quiz .quiz-booking-form form textarea {
+  width: 100%;
+  color: #27667a;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+  -webkit-text-fill-color: #27667a !important;
+}
+.quiz .quiz-booking-form .submit-quiz-booking-form {
+  font-weight: 700;
+  color: #e5e5e5 !important;
+  background-color: #223b47;
+  padding: 14px 30px;
+  font-size: 18px;
+  margin: 15px 0 15px 0;
+  transition: 0.3s ease-in-out;
+}
+.quiz p {
+  color: #223b47;
+  text-align: justify;
+}
+.pdf-download-section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-left: 4px solid #223b47;
+  border-radius: 5px;
+}
+.pdf-download-section p {
+  margin-bottom: 12px;
+  color: #223b47;
+  text-align: left;
+}
+.btn-pdf-download {
+  display: inline-block;
+  background-color: #223b47;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.btn-pdf-download:hover {
+  background-color: #27667a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.pdf-instructions {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
 /* Supporters CSS */
 .supporters {
   display: flex;
   background-color: #dae8d3;
   background: linear-gradient(
-    0.21deg,
+    /* 0.21deg, */ 180.21deg,
     rgba(204, 226, 185, 0.9) -10.91%,
     rgba(231, 241, 230, 0.3) 131.58%
   );
@@ -404,7 +504,7 @@ nav.navbar .navbar-nav {
   background-color: #dae8d3;
   padding: 100px 0 100px 0;
   background: linear-gradient(
-    180.21deg,
+    /* 180.21deg, */ 0.21deg,
     rgba(204, 226, 185, 0.9) -10.91%,
     rgba(231, 241, 230, 0.3) 131.58%
   );
@@ -453,78 +553,39 @@ nav.navbar .navbar-nav {
   text-align: justify;
 }
 
-/* Quiz CSS */
-.quiz {
-  background-color: #dae8d3;
-  padding: 0 0 100px 0;
-  background: linear-gradient(
-    180.21deg,
-    rgba(204, 226, 185, 0.9) -10.91%,
-    rgba(231, 241, 230, 0.3) 131.58%
-  );
-}
-.quiz .quiz-info button {
-  font-weight: 700;
-  color: #e5e5e5 !important;
-  background-color: #223b47;
-  padding: 14px 30px;
-  font-size: 18px;
-  margin: 15px 0 15px 0;
-  transition: 0.3s ease-in-out;
-}
-.quiz .quiz-info h2,
-.quiz .quiz-booking-form h2,
-.quiz .align-items-start h2 {
-  font-size: 32px;
-  font-weight: 500;
-  color: #223b47;
-  margin: 20px 0;
-}
-.quiz .align-items-start h3 {
-  font-size: 20px;
-  font-weight: 500;
-  color: #223b47;
-}
-.quiz .quiz-info p {
-  color: #223b47;
-  margin: 20px 0;
-}
-.quiz .quiz-booking-form form input,
-.quiz .quiz-booking-form form textarea {
-  width: 100%;
-  color: #27667a;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  transition: 0.3s ease-in-out;
-  -webkit-text-fill-color: #27667a !important;
-}
-.quiz .quiz-booking-form .submit-quiz-booking-form {
-  font-weight: 700;
-  color: #e5e5e5 !important;
-  background-color: #223b47;
-  padding: 14px 30px;
-  font-size: 18px;
-  margin: 15px 0 15px 0;
-  transition: 0.3s ease-in-out;
-}
-.quiz p {
-  color: #223b47;
-  text-align: justify;
-}
-
 /* Contact CSS */
 .contact {
   background-color: #dae8d3;
   padding: 20px 0 100px 0;
   background: linear-gradient(
-    0.21deg,
+    /* 0.21deg, */ 180.21deg,
     rgba(204, 226, 185, 0.9) -10.91%,
     rgba(231, 241, 230, 0.3) 131.58%
   );
 }
 .contact img {
   width: 80%;
+}
+.photo-credit {
+  width: 80%;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #223b47;
+}
+.photo-credit p {
+  margin-bottom: 8px;
+}
+.photo-credit a {
+  color: #27667a;
+  text-decoration: none;
+  font-weight: 500;
+}
+.photo-credit a:hover {
+  text-decoration: underline;
 }
 .contact h2 {
   font-size: 45px;
@@ -598,7 +659,7 @@ nav.navbar .navbar-nav {
 .footer {
   background: #dae8d3;
   background: linear-gradient(
-    180.21deg,
+    /* 180.21deg, */ 0.21deg,
     rgba(204, 226, 185, 0.9) -10.91%,
     rgba(231, 241, 230, 0.3) 131.58%
   );
@@ -609,6 +670,30 @@ nav.navbar .navbar-nav {
   font-weight: 400;
   font-size: 16px;
   color: #223b47;
+}
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 30px;
+}
+.social-person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.social-person span {
+  font-weight: 500;
+  color: #223b47;
+  font-size: 14px;
+}
+.social-links a {
+  color: #223b47;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.social-links a:hover {
+  color: #27667a;
+  transform: translateY(-3px);
 }
 
 /* Original CSS from Create React App */
