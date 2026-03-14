@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 import { handleBookingFormSubmit } from '../utils/bookingFormUtils';
-import { TextField, MenuItem } from '@mui/material';
+import { TextField } from '@mui/material';
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
